@@ -1,0 +1,43 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: navajowhite;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.content .container {
+  display: grid;
+  grid-template-columns: repeat(5, 160px);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+.content .container .empty {
+  height: 160px;
+  background-color: orange;
+  display: flex;
+}
+.content .container .empty .fill {
+  margin: auto;
+  background: deeppink;
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.content .container .hold {
+  border: 4px solid lightslategray;
+}
+.content .container .hovered {
+  background: darkseagreen;
+}
+.content .container .invisible {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
